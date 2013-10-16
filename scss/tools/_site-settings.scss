@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+// Html 5 Element
+$audio-canvas-video: flase; // True | False
+
+// Fonts
+$font1: Arial, Helvetica, Arial, sans-serif;
+$font2: Georgia, serif;
+
+// = Colors
+// -----------------------------
+
+// Graphic chart
+$red: #df2e30;
+$blue: #1894c4;
+$facebook: #3b5998;
+$twitter: #43bfe1;
+
+
+// Text
+$color-text-base: #212121;
+
+$color1: $color-text-base;
+
+// link
+$color-link: $color1;
+$color-link-hover: darken($color1, 10%);
+
+// = Grid
+// -----------------------------
+
+// Max width wrapper
+$wrapper-width: pxtoem(1140, 16);
