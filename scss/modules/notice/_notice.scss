@@ -1,0 +1,13 @@
+/* ======================
+  Module/ Notice
+  ======================= */
+
+.notice {
+	display: block;
+	&.notice-1 {
+		> .entry-title {
+			font-size: pxtoem(29, 16);
+			line-height: (29+3)+px;
+		}
+	}
+}

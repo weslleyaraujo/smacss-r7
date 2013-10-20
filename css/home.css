@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/*
+ * SMACSS + SCSS
+ *
+ * Home
+ */
+/* Fonts */
+@font-face {
+  font-family: 'fontello';
+  src: url("/scss/fonts/fontello/fontello.eot?17645658");
+  src: url("/scss/fonts/fontello/fontello.eot?17645658#iefix") format("embedded-opentype"), url("/scss/fonts/fontello/fontello.woff?17645658") format("woff"), url("/scss/fonts/fontello/fontello.ttf?17645658") format("truetype"), url("/scss/fonts/fontello/fontello.svg?17645658#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?17645658#fontello') format('svg');
+  }
+}
+*/
+/* line 22, ../scss/fonts/fontello/_fontello.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+/* line 53, ../scss/fonts/fontello/_fontello.scss */
+.icon-facebook-squared:before {
+  content: '\e800'; }
+
+/* '' */
+/* line 54, ../scss/fonts/fontello/_fontello.scss */
+.icon-gplus-squared:before {
+  content: '\e801'; }
+
+/* '' */
+/* line 55, ../scss/fonts/fontello/_fontello.scss */
+.icon-twitter-squared:before {
+  content: '\e802'; }
+
+/* '' */
+/* Modules */
+/* ======================
+  Sub Module/ entry-title
+  ======================= */
+/* line 7, ../scss/modules/entry-title/_entry-title.scss */
+.entry-title {
+  margin: 0 0 10px 0;
+  color: black; }
+
+/* ======================
+  Sub Module/ bullet-list
+  ======================= */
+/* line 7, ../scss/modules/bullet-list/_bullet-list.scss */
+.bullet-list {
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-size: 0.9375em;
+  list-style: square; }
+  /* line 12, ../scss/modules/bullet-list/_bullet-list.scss */
+  .bullet-list .bullet-list-item {
+    line-height: 1.125em; }
+
+/* ======================
+  Module/ Notice
+  ======================= */
+/* line 5, ../scss/modules/notice/_notice.scss */
+.notice {
+  display: block; }
+  /* line 8, ../scss/modules/notice/_notice.scss */
+  .notice.notice-1 > .entry-title {
+    font-size: 1.8125em;
+    line-height: 32px; }
+
+/* ======================
+  Sub Module/ share-it
+  ======================= */
+/* Compass */
+/* line 10, ../scss/modules/share-it/_share-it.scss */
+.share-it {
+  margin: 3px 0 0 0;
+  font-size: 1.1875em; }
+  /* line 14, ../scss/modules/share-it/_share-it.scss */
+  .share-it > .share-it-list > .share-it-item {
+    list-style-type: none;
+    width: 20px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline; }
+    /* line 18, ../scss/modules/share-it/_share-it.scss */
+    .share-it > .share-it-list > .share-it-item > a {
+      color: #2b6fb7; }

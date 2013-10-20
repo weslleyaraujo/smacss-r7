@@ -11,6 +11,6 @@ $default-main-nav-border: #F1F0F0;
 	border-top: 1px solid;
 	border-bottom: 1px solid;
 	border-color: $default-main-nav-border;
-	padding: 10px 0;
+	padding: 5px 0;
 	@include background-image(linear-gradient(top, white, $default-main-nav-bg));
 }

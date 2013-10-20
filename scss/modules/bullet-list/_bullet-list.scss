@@ -1,0 +1,15 @@
+/* ======================
+  Sub Module/ bullet-list
+  ======================= */
+
+@import "tools/functions";
+
+.bullet-list {
+	margin: 0;
+	padding: 0 0 0 20px;
+  font-size: pxtoem(15, 16);
+  list-style: square;
+  .bullet-list-item {
+  	line-height: pxtoem(18, 16);
+  }
+}

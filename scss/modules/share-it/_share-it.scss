@@ -1,0 +1,23 @@
+/* ======================
+  Sub Module/ share-it
+  ======================= */
+
+/* Compass */
+@import "compass/css3";
+
+$default-share-it-color: #2B6FB7;
+
+.share-it {
+	margin: 3px 0 0 0;
+	font-size: pxtoem(19, 16);
+	> .share-it-list {
+		> .share-it-item {
+			list-style-type: none;
+			width: 20px;
+			@include inline-block;
+			> a {
+				color: $default-share-it-color;
+			}
+		}
+	}
+}

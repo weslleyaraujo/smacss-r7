@@ -668,6 +668,10 @@ hr {
   .l-grid.l-grid-7 {
     width: 1155px; }
 
+/* line 27, ../scss/layout/_main.scss */
+.l-box {
+  margin-top: 10px; }
+
 /* ======================
   Layout/Header
   ======================= */
@@ -699,7 +703,7 @@ hr {
   border-top: 1px solid;
   border-bottom: 1px solid;
   border-color: #f1f0f0;
-  padding: 10px 0;
+  padding: 5px 0;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dadada));
   background-image: -webkit-linear-gradient(top, #ffffff, #dadada);
   background-image: -moz-linear-gradient(top, #ffffff, #dadada);
