@@ -1,0 +1,16 @@
+/* ======================
+  Module/ Main-nav
+  ======================= */
+
+$default-main-nav-bg: #DADADA;
+$default-main-nav-border: #F1F0F0;
+
+@import "compass";
+
+.main-nav {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: $default-main-nav-border;
+	padding: 10px 0;
+	@include background-image(linear-gradient(top, white, $default-main-nav-bg));
+}

@@ -26,4 +26,8 @@ $color-link-hover: darken($color1, 10%);
 // -----------------------------
 
 // Max width wrapper
-$wrapper-width: pxtoem(1140, 16)
+$wrapper-width: pxtoem(1140, 16);
+
+// Sections declarations
+$sections: noticias, entretenimento, esportes, videos, rede-record, shopping, servicos;
+$section-colors: black, #C22083, #0A9806, #007CD7, #2E50CB, #FD6B08, #5F7687;

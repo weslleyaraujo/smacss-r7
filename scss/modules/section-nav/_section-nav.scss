@@ -1,0 +1,26 @@
+/* ======================
+  Sub Module/ section-nav
+  ======================= */
+
+$default-section-nav-border: #DADADA;
+
+.section-nav {
+	.section-nav-item {
+		font-weight: bold;
+		padding: 0 15px;
+		border-right: 1px solid;
+		border-color: $default-section-nav-border;
+		font-size: pxtoem(17, 16);
+		@include inline-block;
+		&.first {
+			padding-left: 0;
+		}
+		$count: 1;
+		@each $section in $sections {
+			.section-nav-link-#{$section} {
+				color: nth($section-colors, $count);
+			}
+			$count: $count+1;
+		}
+	}
+}
