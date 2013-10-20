@@ -628,11 +628,45 @@ hr {
 /* ======================
   Layout/Main
   ======================= */
-/* line 5, ../scss/layout/_main.scss */
+/* line 8, ../scss/layout/_main.scss */
 .l-main {
   width: 1240px;
   position: relative;
   margin: 0 auto; }
+
+/* line 14, ../scss/layout/_main.scss */
+.l-grid {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; }
+  /* line 17, ../scss/tools/_mixins.scss */
+  .lt-ie8 .l-grid {
+    display: inline;
+    zoom: 1; }
+  /* line 17, ../scss/layout/_main.scss */
+  .l-grid.last {
+    margin-right: 0; }
+  /* line 21, ../scss/layout/_main.scss */
+  .l-grid.l-grid-1 {
+    width: 165px; }
+  /* line 21, ../scss/layout/_main.scss */
+  .l-grid.l-grid-2 {
+    width: 330px; }
+  /* line 21, ../scss/layout/_main.scss */
+  .l-grid.l-grid-3 {
+    width: 495px; }
+  /* line 21, ../scss/layout/_main.scss */
+  .l-grid.l-grid-4 {
+    width: 660px; }
+  /* line 21, ../scss/layout/_main.scss */
+  .l-grid.l-grid-5 {
+    width: 825px; }
+  /* line 21, ../scss/layout/_main.scss */
+  .l-grid.l-grid-6 {
+    width: 990px; }
+  /* line 21, ../scss/layout/_main.scss */
+  .l-grid.l-grid-7 {
+    width: 1155px; }
 
 /* ======================
   Layout/Header
@@ -640,7 +674,7 @@ hr {
 /* line 5, ../scss/layout/_header.scss */
 .l-header {
   display: block;
-  min-height: 160px; }
+  min-height: 100px; }
 
 /* ===========================
   Layout/Row

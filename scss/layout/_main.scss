@@ -2,8 +2,24 @@
   Layout/Main
   ======================= */
 
+$grid-width: 165;
+$grid-available: 7;
+
 .l-main {
 	width: 1240px;
 	position: relative;
 	margin: 0 auto;
+}
+
+.l-grid {
+	@include inline-block;
+	margin-right: 10px;
+	&.last {
+		margin-right: 0;
+	}
+	@for $i from 1 through $grid-available {
+		&.l-grid-#{$i} {
+			width: ($grid-width * $i) + px;	
+		}
+	}
 }
