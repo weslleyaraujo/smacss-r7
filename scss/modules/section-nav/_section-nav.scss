@@ -15,12 +15,17 @@ $default-section-nav-border: #DADADA;
 		&.first {
 			padding-left: 0;
 		}
-		$count: 1;
-		@each $section in $sections {
-			.section-nav-link-#{$section} {
-				color: nth($section-colors, $count);
+		.section-nav-link {
+			&:hover {
+				text-decoration: underline;
 			}
-			$count: $count+1;
+			$count: 1;
+			@each $section in $sections {
+				&.#{$section} {
+					color: nth($section-colors, $count);
+				}
+				$count: $count+1;
+			}
 		}
 	}
 }
